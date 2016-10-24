@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Brainitz</title>
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+</head>
+  <body>
+  <nav class="pull-left navbar navbar-inverse navbar-fixed-top" role="navigation">
+        <div class="container-fluid">
+            <div class="pull-left navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <div>
+                  <a class="navbar-brand" href="#topContainer">Brainitz</a>
+                </div>
+            </div>
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav">
+                    <li>
+                        <a href="#topContainer">Home</a>
+                    </li>
+                    <li>
+                        <a href="#details">About</a>
+                    </li>
+                    <li>
+                        <a href="#demo">Demo</a>
+                    </li>
+                    <li>
+                        <a href="#community">Community</a>
+                    </li>
+                    </ul>
+                    <div class="pull-right">
+                      <form class="navbar-form navbar-right">
+                        <button type="button" class="btn btn-style" data-toggle="modal" data-target="#SignInModal">Sign Up</button>
+		                      <a href="FAQ.html" class= "btn btn-style">F.A.Q.</a>
+                          <a href="pricing.html" class="btn btn-style">Pricing</a>
+                      </form>
+                    </div>
+                </div>
+        </div>
+    </nav>
+<div id="topContainer">
+  <div class="container-fluid contentContainer">
+    <div class="row">
+      <div class="col-md-6 col-md-offset-3" id="topRow">
+        <div class="text-center">
+          <p class="splash-title">Brainitz</p>
+          <div class="splash-title-dec"></div>
+        </div>
+        <!-- modal trigger -->
+        <button type="button" class="btn btn-block video-toggle-btn" data-toggle="modal" data-target="#myModal"><p class="splash-button-text">See the video!</p></button>
+        <form class="marginTop">
+
+        </form>
+      </div>
+      </div>
+    </div>
+  </div>
+    <div class="container-fluid content-container" id="details">
+      <div class="row" class="center">
+        <h1 class="center title1">What Is Brainitz?</h1>
+      </div>
+      <div class="row marginBottom">
+        <div class="answer-cards col-md-4 marginTop">
+          <img class="icon-images" src="images/feature_icons/hourglass.svg" alt=""/>
+          <br>
+          <div class="answer-cards-content">
+            <h3>SAVE TIME</h3>
+            <hr>
+            <p class="card-text">Simply add questions throughout a chosen video once. Use the video lesson in class, for homework for absent students, for review.
+            </p>
+          </div>
+        </div>
+        <div class="answer-cards col-md-4 col-lg-4 marginTop">
+          <img class="icon-images" src="images/feature_icons/achievement.svg" alt=""/>
+          <br>
+          <div class="answer-cards-content">
+            <h3>BOOST STUDENT ACHIEVEMENT</h3>
+            <hr>
+            <p class="card-text">Questions pop up throughout the video lesson. If an answer is incorrect, the video backs up to re-teach. Short answer essays are evaluated in real time</p>
+          </div>
+        </div>
+        <div class="answer-cards col-md-4 col-lg-4 marginTop">
+          <img class="icon-images" src="images/feature_icons/collaborate.svg" alt=""/>
+          <br>
+          <div class="answer-cards-content">
+            <h3>COLLABORATE</h3>
+            <hr>
+            <p class="card-text">Evaluate the student data. Share your lessons, use the lessons from other teachers.
+          </div>
+          </p>
+        </div>
+      </div>
+    </div>
+    <div class="container contentContainer" id="demo">
+      <div class="row">
+        <h1 class="center title1">Take the Tour!</h1>
+        <p class="lead center">Even better, try it for yourself!</p>
+        <a href="#demo"><img data-toggle="modal" data-target="#myModal" src="images/monitor-demo-crop.png" class="teachifyImage"/></a>
+      </div>
+    </div>
+
+    <!-- ************ Video MODAL -->
+    <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-lg" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+            <h4 class="modal-title" id="myModalLabel">Brainitz Demo</h4>
+          </div>
+          <div class="modal-body">
+            <video id="vid1"
+              class="video-js vjs-default-skin"
+              controls
+              preload="auto"
+              width="640"
+              height="360"
+              data-setup='{ "techOrder": ["youtube"], "sources": [{ "type": "video/youtube", "src": "https://www.youtube.com/watch?v=sFQJcX0GJe8"}], "youtube": { "ytControls": 2 } }'>
+            </video>
+          </div>
+          <div class="modal-footer">
+            <button class="btn btn-primary" id="playPause">Play/Pause</button>
+            <button type="button" id="modal-close" class="btn btn-secondary" data-dismiss="modal">Close</button>
+          </div>
+        </div>
+      </div>
+    </div>
+<!-- Sign In Modal -->
+    <div class="modal fade" id="SignInModal">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+            <div class="btn-block btn-danger btn-block close-header">Sign Up to be a beta user - Expected release in 2017</div>
+          </div>
+          <div class="modal-body">
+            <h3 class="modal-sign-in-text text">Sign Up</h3>
+            <form class="beta-sign-up">
+              <div class="form-group">
+
+                <div class="control-group">
+                  <div class="controls">
+                    <input type="text" name="firstName" autofocus class="form-control signUp first-name" placeholder="First Name">
+                  </div>
+                </div>
+
+                <div class="control-group">
+                  <div class="controls">
+                    <input type="text" name="lastName" class="form-control signUp last-name" placeholder="Last Name">
+                  </div>
+                </div>
+                <div class="control-group">
+                  <div class="controls">
+                    <input type="text" name="school" class="form-control signUp school" placeholder="School">
+                  </div>
+                </div>
+                <div class="control-group">
+                  <div class="controls">
+                    <input type="text" name="district" class="form-control signUp district" placeholder="School District">
+                  </div>
+                </div>
+                <div class="control-group">
+                  <div class="controls">
+                    <input type="email" name="email" class="form-control signUp email" placeholder="Email">
+                  </div>
+                </div>
+                <div class="control-group">
+                  <div class="controls">
+                    <input type="text" name="state" class="form-control signUp state" placeholder="State">
+                  </div>
+                </div>
+              </div>
+            </form>
+          </div>
+
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary btn-danger" data-dismiss="modal">Cancel</button>
+            <button type="button" class="btn btn-primary btn-success submit-email">Submit</button>
+            <div class="successMessage" style="display: none">Thank you!</div>
+          </div>
+        </div>
+      </div>
+    </div>
+<!-- End of Sign in Modal -->
+
+
+
+
+	<div class="container-fluid contentContainer" id="community">
+    <h1 class="center title">Join the Community!</h1>
+    <p class="lead2 center">Check out what other teachers are creating.</p>
+	  <div class="row marginBottom">
+         <div class="community-cards col-md-4 marginTop">
+          <img class="community-images" src="images/WWII-photo-2.png" alt=""/>
+          <br>
+          <div class="community-cards-content">
+            <h3>Suits All Learning Styles</h3>
+            <hr>
+            <p class="card-text">Ideal for flipped or blended learning. Perfect for absent or struggling students.</p>
+          </div>
+         </div>
+        <div class="community-cards col-md-4 col-lg-4 marginTop">
+          <img class="community-images" src="images/astronaut_shot.png" alt=""/>
+          <br>
+          <div class="community-cards-content">
+            <h3>Content is Retained</h3>
+            <hr>
+            <p class="card-text">Frequent checks for understanding keep students focused and re-teaches as needed.</p>
+          </div>
+        </div>
+        <div class="community-cards col-md-4 col-lg-4 marginTop">
+          <img class="community-images" src="images/community_division.png" alt=""/>
+          <br>
+          <div class="community-cards-content">
+            <h3>User Friendly Navigation</h3>
+            <hr>
+            <p class="card-text">Try the student buttons on the right for chatroom, notes, vocabulary, closed captioning and more. 	</p>
+          </div>
+
+        </div>
+
+      </div>
+    </div>
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="   crossorigin="anonymous"></script>
+    <script src="https://www.gstatic.com/firebasejs/3.5.0/firebase.js"></script>
+    <script src="http://vjs.zencdn.net/5.10.4/video.js"></script>
+    <script src="plugins/videojs-youtube-master/src/Youtube.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.15.1/jquery.validate.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.15.1/additional-methods.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="js/firebase.js"></script>
+    <script type="text/javascript" src="js/script.js"></script>
+  </body>
+
+</html>
