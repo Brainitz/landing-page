@@ -53,7 +53,9 @@ h3, p{
 .video-toggle-btn:hover{
   background-color: #7CBDDA;
 }
-
+.video-js{
+  margin-top: 4vh;
+}
 .splash-button-text{
   font-family: 'Roboto', sans-serif;
   font-size: 2em;
@@ -80,12 +82,13 @@ h3, p{
   background-color: black;
 }
 
-.signUp{
-  margin-top: 5%;
-
-  }
 .navbar-brand:hover {
   color: #2E495A   !important;
+}
+
+.community-images{
+  height: 30vh;
+  width: 40vh;
 }
 
 .navbar-nav li a {
@@ -98,19 +101,20 @@ h3, p{
   color: #2E495A  !important;
 }
 .modal-dialog{
-  opacity: .9;
-  padding-bottom: 2vh;
+  background-color:#A5A4A1;
 }
+
 .modal-body {
   z-index: 2000;
 }
+
 .SignInFooter{
   margin-left: 1vw;
 }
+
 .buttonTwo{
   margin-left: 1vw;
 }
-
 
 #topContainer {
   background-image: url("../images/science_splash.jpg");
@@ -121,24 +125,26 @@ h3, p{
 }
 
 .price-header-cont{
+  margin-top: 4.5%;
   height: 11vh;
   width:100%;
   background-color: #2E495A;
   background-size: cover;
 }
 
-
 #pricing{
   margin-top: 1vh;
   color: #F0EEEF;
   font-family: 'Roboto', sans-serif;
 }
+
 .beta-text-cont{
   margin-top: -2%;
   height: 10vh;
   width: 100%;
   background-color:#F0EEEF;
 }
+
 .pricing-container{
   margin-top: 10vh;
 }
@@ -204,20 +210,20 @@ h3, p{
 
 */
 .block1{
-  height: 55vh;
+  height: 50vh;
   background-color:#012241;
 
 }
 .block2{
-  height: 55vh;
+  height: 50vh;
   background-color: #7CBDDA;
 }
 .block3{
-  height: 55vh;
+  height: 50vh;
   background-color:#012241;
 }
 .block4{
-  height: 55vh;
+  height: 50vh;
   background-color:#7CBDDA;
 }
 .pric-col-header{
@@ -234,7 +240,6 @@ h3, p{
   height:6vh;
   width: 100%;
   margin: auto;
-  margin-bottom: 50px;
   color:#F0EEEF;
   letter-spacing: 1px;
   font-family: 'Roboto', sans-serif;
@@ -283,7 +288,7 @@ h3, p{
 
 }
 .title {
-  color: #28527D;
+  color: #F9EFC2;
   margin-top:100px;
   font-size: 48px;
   font-family: 'Roboto', sans-serif;
@@ -303,7 +308,7 @@ h3, p{
 }
 
 #community {
-  background-color: #FAF1C9;
+  background-color: #294050;
 }
 
 .FAQ-header {
@@ -347,13 +352,13 @@ h3, p{
 .lead {
   font-weight:bold;
   font-size:200%;
-  color:red;
+  color:#ECE8EA;
 }
 
 .lead2 {
   font-weight:bold;
   font-size:200%;
-  color:black;
+  color:#EEEBED;
 }
 
 .vjs-control-bar {
@@ -391,8 +396,6 @@ h3, p{
 
 .community-cards {
   text-align: center;
-  padding: 96px;
-
 }
 
 .community-cards-content {
@@ -401,8 +404,7 @@ h3, p{
   width: 25vw;
   padding: 20px;
   margin-top: 20px;
-  margin-left: -15%;
-
+  margin-left: 10%;
   box-shadow: 5px 5px 5px #A5A4A1;
   border-radius: 8%;
 }
@@ -417,17 +419,4 @@ h3, p{
   height: auto;
   margin-top: 20px;
   margin-bottom: 20px
-}
-
-label.valid {
-  display: none !important;
-}
-
-.successMessage {
-  color: #468966;
-}
-
-.close-header {
-  padding: 10px;
-  border-radius: 5px;
 }
