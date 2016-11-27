@@ -110,12 +110,11 @@ h3, p{
   position: fixed;
   height: 5vh;
   opacity: .8;
-  margin-left: 50%;
+  margin-left: 55%;
   width: 15%;
 }
-.fa-twitter-square{
-  font-size: 30%;
-  
+.social_twitter{
+  margin-left:1%;
 }
 .modal-body {
   z-index: 2000;
