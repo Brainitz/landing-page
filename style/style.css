@@ -104,6 +104,18 @@ h3, p{
   background-color:#A5A4A1;
 }
 
+.social_media_container{
+  z-index: 9;
+  margin-top: 5%;
+  position: fixed;
+  height: 5vh;
+  opacity: .8;
+  margin-left: 55%;
+  width: 15%;
+}
+.social_twitter{
+  margin-left:1%;
+}
 .modal-body {
   z-index: 2000;
 }
